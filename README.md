@@ -1,3 +1,25 @@
+In order to run the API:
+
+Prerequisites:
+
+PHP >= 8.1
+MySQL > = 5 or MariadB >= 10
+A web server
+
+- Clone the repo
+- Create a database and a user login for that database
+- In the root of the cloned project, create an .env file and add the variables QB_TOKEN and QB_BASE_URL
+- Run the following commands on the command prompt: **composer install && php artisan migrate:fresh --seed**
+- Open http://qb-api.test and login using username: test@example.com password: 12345678
+- You will see a token in the middle of the screen right under the Laravel logo.
+- Use that token in the QB_TOKEN variable in your .env file
+- The QB_BASE_URL can be empty. In that case the "https://api.quickbutik.com/v1" will be used.
+- Using this token issue GET requests with Bearer Token authentication on the following endpoints:
+- http://qb-api.test/api/getOrders
+- http://qb-api.test/api/getAverage
+- http://qb-api.test/api/getTopsellers
+- The token will be displayed only once. In case you forgot or need a new token, just refresh the page to get a new one.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
