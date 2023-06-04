@@ -2,9 +2,9 @@ In order to run the API:
 
 Prerequisites:
 
-PHP >= 8.1
-MySQL > = 5 or MariadB >= 10
-A web server
+PHP >= 8.1 <br>
+MySQL > = 5 or MariadB >= 10 <br>
+A web server <br>
 
 - Clone the repo
 - Create a database and a user login for that database
