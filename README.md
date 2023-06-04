@@ -10,7 +10,7 @@ A web server
 - Create a database and a user login for that database
 - In the root of the cloned project, create an .env file and add the variables QB_TOKEN and QB_BASE_URL
 - Run the following commands on the command prompt: **composer install && php artisan migrate:fresh --seed**
-- Open http://qb-api.test and login using username: test@example.com password: 12345678
+- Open http://qb-api.test and login using username: test@example.com and password: 12345678
 - You will see a token in the middle of the screen right under the Laravel logo.
 - Use that token in the QB_TOKEN variable in your .env file
 - The QB_BASE_URL can be empty. In that case the "https://api.quickbutik.com/v1" will be used.
