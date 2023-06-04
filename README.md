@@ -12,9 +12,9 @@ A web server
 - Run the following commands on the command prompt: **composer install && php artisan migrate:fresh --seed**
 - Open http://qb-api.test and login using username: test@example.com and password: 12345678
 - You will see a token in the middle of the screen right under the Laravel logo.
-- Use that token in the QB_TOKEN variable in your .env file
+- The QB_TOKEN variable is the token you acquired from QB support and will be used internally. It is required.
 - The QB_BASE_URL can be empty. In that case the "https://api.quickbutik.com/v1" will be used.
-- Using this token issue GET requests with Bearer Token authentication on the following endpoints:
+- Using the token displayed on the main page, issue GET requests with Bearer Token authentication on the following endpoints:
 - http://qb-api.test/api/getOrders
 - http://qb-api.test/api/getAverage
 - http://qb-api.test/api/getTopsellers
