@@ -10,6 +10,7 @@ In order to run the API:
 - Create a database and a user login for that database
 - In the root of the cloned project, create an .env file and add the variables QB_TOKEN and QB_BASE_URL
 - Run the following commands on the command prompt: **composer install && php artisan migrate:fresh --seed**
+- Set the document root to the public directory of the project
 - Open http://qb-api.test and login using username: test@example.com and password: 12345678
 - You will see a token in the middle of the screen right under the Laravel logo.
 - The QB_TOKEN variable is the token you acquired from QB support and will be used internally. It is required.
